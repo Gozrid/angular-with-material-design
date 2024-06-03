@@ -3,12 +3,12 @@
   <ng-container>
     <mat-label class="changedLabel"><b>Eingebener Text:</b> {{ labelText }}</mat-label>
     <mat-form-field class="form">
-      <mat-label>Material Input Feld!</mat-label>
+      <mat-label>Material Eingabe Feld!</mat-label>
       <input matInput class="full-width" placeholder="Hier etwas eingeben!" [(ngModel)]="textValue"
              (ngModelChange)="autoUpdate()">
     </mat-form-field>
     <div class="options">
-      <mat-slide-toggle (toggleChange)="toggleAutoUpdate()"><span class="optionsText">Toggle Slider!</span>
+      <mat-slide-toggle (toggleChange)="toggleAutoUpdate()"><span class="optionsText">Text automatisch ändern</span>
       </mat-slide-toggle>
       <button mat-button (click)="manualUpdateText()" class="button"><span class="optionsText">Text ändern!</span>
       </button>

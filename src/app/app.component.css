@@ -13,10 +13,11 @@ h3 {
 }
 
 .card {
-  width: 600px;
+  width: 550px;
   margin: 0 auto;
   top:25%;
   align-items: center;
+  background-color: #f3dde15f;
 }
 
 .changedLabel {

@@ -1,18 +1,26 @@
 <mat-card class="card">
   <h3><u>Material Design in Angular</u></h3>
   <ng-container>
+
+    <!-- Eingegebener Text -->
     <mat-label class="changedLabel"><b>Eingebener Text:</b> {{ labelText }}</mat-label>
+
+    <!-- Eingabefeld -->
     <mat-form-field class="form">
       <mat-label>Material Eingabe Feld!</mat-label>
       <input matInput class="full-width" placeholder="Hier etwas eingeben!" [(ngModel)]="textValue"
              (ngModelChange)="autoUpdate()">
     </mat-form-field>
+
+    <!-- Optionen -->
     <div class="options">
       <mat-slide-toggle (toggleChange)="toggleAutoUpdate()"><span class="optionsText">Text automatisch ändern</span>
       </mat-slide-toggle>
       <button mat-button (click)="manualUpdateText()" class="button"><span class="optionsText">Text ändern!</span>
       </button>
     </div>
+
+    <!-- Autor -->
     <mat-label class="author">Fabian Senftleben</mat-label>
   </ng-container>
 </mat-card>

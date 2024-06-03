@@ -5,4 +5,4 @@
 2. Open in IDE (for example [Visual Studio Code](https://code.visualstudio.com/))
 3. Open Terminal and run `npm install`
 4. Then run `npm run start`
-5Open http://localhost:4200/
+5. Open http://localhost:4200/
